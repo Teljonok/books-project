@@ -1,0 +1,24 @@
+
+<div class="" style="display:flex; flex:auto;">
+  <p-card [style]="{width: '360px'}" styleClass="p-card-shadow">
+
+    <div  class="card-container" style="display:flex;">
+      <div class="book-props">
+        <div class="item" *ngIf="bookData.title"><span class="item-title">Title: </span> {{bookData.title}}</div>
+        <div class="item" *ngIf="bookData.subtitle"><span class="item-title">Subtitle: </span>{{bookData.subtitle}}</div>
+        <ng-container *ngIf="bookData.authors?.length">
+          <div *ngFor="let author of bookData.authors; let index = index" class="item"><span class="item-title">Authors: </span>
+            <div>{{author}}</div>
+          </div>
+        </ng-container>
+
+        <div class="item" *ngIf="bookData.publishedDate"> <span class="item-title">Published Year: </span>{{bookData.publishedDate}}</div>
+      </div>
+      <div>
+        <img alt="Card" src="{{bookData.image}}">
+      </div>
+    </div>
+
+  </p-card>
+</div>
+

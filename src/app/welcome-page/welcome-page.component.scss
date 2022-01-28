@@ -1,0 +1,169 @@
+$assetsPath: '/assets/';
+
+.userName-form {
+  width: 400px;
+  height: 265px;
+  &-form-row {display: flex; flex-direction: column; align-items: center; font-size: 14px; margin-bottom: 10px; padding: 15px 0;}
+  &-ui-inputgroup { display: flex; justify-content: flex-start; align-items: center;
+    &-ng-invalid {border: solid 1px #f25555;}
+    &-ng-invalid.ng-dirty ~ .error-wrapper {display: flex;}
+    &-input[type="text"] { color:#f25555; padding: 5px; font-size: 12px;}
+    &-icon {position: absolute; right: 5px; top: 50%; transform: translateY(-50%); color: #cccccc;}
+    &-error-wrapper { width: 30px;display: none; align-items: center; justify-content: flex-end;
+      &-icon{ background: #f25555; color:#f25555;}
+      //&-small-icon {width: 20px;min-width: 20px;height: 20px;}
+      //&-minor{background: #FF5B5B;width: 19px;height: 19px;
+    }
+    //&-input-text {
+    //  &-ng-invalid {padding: 0; border: solid 1px #f25555; width: 50px;
+    //    //input {padding: 0;width: 50px;}
+    //    &-userName {margin-right: 5px;width: auto;}
+    //    &-error-wrapper {display: block;
+    //      &-icon{margin-top: 2px;}
+    //    }
+    //  }
+    //}
+  }
+  }
+
+
+
+.userName-container{
+  display:flex;
+    &-form {
+      margin-top: 10%;
+      flex: 1 0 50%;
+      align-self: flex-start;
+
+    &-wrapper {display: flex; flex-direction: column; align-items: center; font-size: 14px; margin-bottom: 10px; padding: 15px 0;}
+    .form-row {display: flex; flex-direction: column; align-items: center; font-size: 14px; margin-bottom: 10px; padding: 15px 0;
+      &-userName {display: flex; margin-right: 20px; flex: 0 0 97%; margin-bottom: 7px; font-size: large;}
+    }
+
+    .ui-inputgroup { display: flex; justify-content: flex-start; align-items: center;
+      &-input-text { padding: 5px; font-size: 12px; border-radius: 11px;}
+      &-info-icon{ margin-left:10px; font-size: 20px;}
+      .ng-invalid{ border: solid 2px #f25555; color: #f25555;
+        padding: 5px;
+        font-size: 12px;
+      }
+      .error-wrapper {align-items: center; justify-content: flex-end;
+        &-icon{ font-size: 20px; color:#f25555; margin-left:10px}
+        //&-small-icon {width: 20px;min-width: 20px;height: 20px;}
+        //&-minor{background: #FF5B5B;width: 19px;height: 19px;
+      }
+    }
+
+  }
+}
+
+.cw-apply-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //.welcome-title span {
+  //  width: 100px;
+  //  height: 100px;
+  //}
+}
+
+
+
+
+
+
+
+
+
+//.userName-form {
+//
+//
+//
+//  .form-row {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    font-size: 14px;
+//    padding: 15px 0;
+//
+//
+//    .ui-inputgroup {
+//      display: flex;
+//      justify-content: flex-start;
+//      align-items: center;
+//
+//      .ng-invalid.ng-dirty {
+//        border: solid 1px #f25555;
+//      }
+//
+//      .ng-invalid.ng-dirty ~ .error-wrapper {
+//        display: flex;
+//      }
+//
+//      input[type="text"] {
+//        padding: 5px;
+//      }
+//
+//    }
+//    .userName {
+//      margin-right: 5px;
+//      width: auto;
+//    }
+//
+//    .error-wrapper {
+//      width: 30px;
+//      display: none;
+//      align-items: center;
+//      justify-content: flex-end;
+//      i {
+//        background: #f25555;
+//        &.small-icon {
+//          width: 20px;
+//          min-width: 20px;
+//          height: 20px;
+//        }
+//        i.minor{
+//          background: #FF5B5B;
+//          width: 19px;
+//          height: 19px;
+//        }
+//      }
+//    }
+//
+//    input {
+//      &.invalid {
+//        padding: 0;
+//
+//        input {
+//          padding: 0;
+//          width: 50px;
+//        }
+//
+//        .error-wrapper {
+//          display: block;
+//          i {
+//            margin-top: 2px;
+//
+//            //&.no-result{
+//            //  content: '';
+//            //  background-image: url(#{$assetsPath}svgs/no-result.svg);
+//            //  &.transparent {
+//            //    background: none;
+//            //    mask: url(#{$assetsPath}svgs/no-result.svg) 50% 50% / contain no-repeat;
+//            //  }
+//            //}
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+
+//.question-icon{
+//  vertical-align: middle;
+//  width: 23px;
+//  height: 23px;
+//  padding-left: 34px;
+//}
+
+

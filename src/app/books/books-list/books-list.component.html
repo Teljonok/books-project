@@ -1,0 +1,17 @@
+
+<h1 class="welcome-title"><span>Welcome {{userName}} !</span></h1>
+
+<div>
+  <i class="pi pi-search"></i>
+  <input pInputText  placeholder="Search" type="text" class="search-book" [(ngModel)]="searchText" autocomplete="off"
+         (keypress)="onSearchClick(searchText)"
+         (blur)="onSearchClick(searchText)"/></div>
+<div *ngIf="nodata" class="empty"> No Books Data </div>
+<div class="books-wrapper" style="display:flex;">
+  <div class="books-wrapper-book-item" *ngFor="let book of books">
+    <app-book-card class="" [bookData] = book  (click)="addBookToFavorites(book)"></app-book-card>
+  </div>
+</div>
+
+
+

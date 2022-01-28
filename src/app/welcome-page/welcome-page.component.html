@@ -1,0 +1,35 @@
+<h1 class="welcome-title"><span>Welcome</span></h1>
+
+  <div class="userName-container">
+    <form class="userName-container-form" [formGroup]="userNameForm">
+
+      <div class="userName-container-form-wrapper">
+        <div class="form-row">
+          <label class="form-row-userName" for="userName">UserName</label>
+          <div class="ui-inputgroup">
+            <input id="userName" formControlName="userName" placeholder="Please enter username" pInputText class="ui-inputgroup-input-text userName" [title]="userNameForm.get('userName').value" >
+            <i *ngIf="userNameForm.get('userName').valid" class="pi pi-question-circle ui-inputgroup-info-icon" pTooltip="UserName should be between 1 to 30 characters"></i>
+<!--            {{userNameForm.get('userName').errors|json}} {{userNameForm.get('userName').invalid}}-->
+            <span class="error-wrapper">
+          <i class="pi pi-info-circle small-icon error-wrapper-icon minor transparent"
+             pTooltip="UserName is required"
+             *ngIf="(userNameForm.get('userName').invalid || userNameForm.get('userName').errors?.required) && !userNameForm.get('userName').errors?.maxlength"></i>
+              <i class="pi pi-info-circle small-icon error-wrapper-icon minor transparent"
+                 pTooltip="UserName length must not exceed 30 characters"
+                 *ngIf="userNameForm.get('userName').errors?.maxlength && userNameForm.get('userName').dirty"></i>
+        </span>
+          </div>
+        </div>
+      </div>
+      <p-button class="cw-apply-button dark" label="Enter" (click)="goToBooksPage()" [disabled]="!userNameForm.valid"
+                [class.disabled]="!userNameForm.valid"></p-button>
+    </form>
+
+  </div>
+
+
+
+<!--    <p-button class="cancel" label="Cancel" (click)="closeDialog()"></p-button>-->
+
+
+

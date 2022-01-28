@@ -1,0 +1,12 @@
+<div class="tabs-wrapper"  style="padding: .5em 0 1em 0">
+    <p-button (click)="activeIndex = 0" styleClass="p-button-text" label="Search"></p-button>
+    <p-button (click)="activeIndex = 1" styleClass="p-button-text" label="Wishlist" [style]="{'margin-left': '.5em'}"></p-button>
+  </div>
+<p-tabView [(activeIndex)]="activeIndex" class="tabs-wrapper-main-view">
+  <p-tabPanel>
+    <app-books-list></app-books-list>
+  </p-tabPanel>
+  <p-tabPanel>
+    <app-wish-list></app-wish-list>
+  </p-tabPanel>
+</p-tabView>

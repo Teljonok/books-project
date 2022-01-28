@@ -1,0 +1,15 @@
+.books-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  &-book-item{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+}
+
