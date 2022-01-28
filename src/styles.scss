@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #22283c;
+  color: #c5c2c2;
+}
+
+.welcome-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .welcome-title span {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+[class*="p-icons-"] {
+  display: inline-block;
+  font-family: p-icons;
+  font-style: normal;
+  i:before {
+    font-family: p-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    vertical-align: top;
+  }
+}
